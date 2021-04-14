@@ -1,0 +1,92 @@
+
+<!-- HTML Responsive Web Design
+Responsive web design is about creating web pages that look good on all devices!
+
+A responsive web design will automatically adjust for different screen sizes and viewports. -->
+
+
+<!-- What is Responsive Web Design?
+Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones):
+
+Setting The Viewport
+To create a responsive website, add the following <meta> tag to all your web pages:
+
+Example -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Responsive Images
+Responsive images are images that scale nicely to fit any browser size.
+
+Using the width Property
+If the CSS width property is set to 100%, the image will be responsive and scale up and down:
+ -->
+
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h2>Responsive Image</h2>
+<p>When the CSS width property is set in a percentage value, the image will scale up and down when resizing the browser window. Resize the browser window to see the effect.</p>
+
+<img src="image/img_sun.jpg" style="width:50%; border:red">
+
+</body>
+</html>
+
+
+<!-- Show Different Images Depending on Browser Width
+The HTML <picture> element allows you to define different images for different browser window sizes.
+
+Resize the browser window to see how the image below change depending on the width: -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h2>Show Different Images Depending on Browser Width</h2>
+<p>Resize the browser width and the image will change at 600px and 1500px.</p>
+
+<picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  <source srcset="flowers.jpg">
+  <img src="img_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+
+</body>
+</html>
+
+<!-- Media Queries
+In addition to resize text and images, it is also common to use media queries in responsive web pages.
+
+With media queries you can define completely different styles for different browser sizes.
+
+Example: resize the browser window to see that the three div elements below will display horizontally on large screens and stacked vertically on small screens: -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h2>Show Different Images Depending on Browser Width</h2>
+<p>Resize the browser width and the image will change at 600px and 1500px.</p>
+
+<picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  <source srcset="flowers.jpg">
+  <img src="img_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+
+</body>
+</html>
+
