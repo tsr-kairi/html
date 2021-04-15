@@ -1,93 +1,83 @@
-<!-- 
-
-HTML Forms
-An HTML form is used to collect user input. The user input is most often sent to a server for processing.
-
-Example -->
-
 <!DOCTYPE html>
-<html>
-  <body>
+<!-- saved from url=(0177)http://127.0.0.1:5500/w3schools/form.html?fname=Ranjit&lname=Kairi&father=Ramabtar+Kairi&mother=Gayetri+Kairi&email=ranjitkoiri009%40gmail.com&mobile=%2B919127301592&gender=male -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>
     <h3>APPLECATION FORM</h3>
 
-    <form action="/action_page.php" autocomplete="on">
-      <label for="fname">First name:</label>
-      <input
-        type="text"
-        id="fname"
-        name="fname"
-        placeholder="first name"
-        required
-      /><br>
-      <br />
-      <label for="lname">Last name:</label>
-      <input
-        type="text"
-        id="lname"
-        name="lname"
-        placeholder="last name"
-        required
-      /><br />
-      <br />
-      <label for="father name">father name:</label>
-      <input
-        type="text"
-        id="father"
-        name="father"
-        placeholder="fater name"
-        required
-      /><br />
-      <br />
-      <label for="mother name">mother name:</label>
-      <input
-        type="text"
-        id="mother"
-        name="mother"
-        placeholder="mother name"
-        required
-      /><br />
-      <br />
-      <label for="email id">email id:</label>
-      <input
-        type="text"
-        id="email"
-        name="email"
-        placeholder="email id"
-        required
-      /><br />
-      <br />
-      <label for="mobile number">mobile number:</label>
-      <input
-        type="text"
-        id="mobile"
-        name="mobile"
-        placeholder="mobile number"
-        required
-      /><br />
-      <br />
-      <label for="permanent address">permanent address:</label>
-      <input type="text" id="permanent" name="permanent address" placeholder="permanent address" required/><br>
+    <form>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" placeholder="first name" required=""><br>
       <br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" placeholder="last name" required=""><br>
+      <br>
+      <label for="father name">father name:</label><br>
+      <input type="text" id="father" name="father" placeholder="fater name" required=""><br>
+      <br>
+      <label for="mother name">mother name:</label><br>
+      <input type="text" id="mother" name="mother" placeholder="mother name" required=""><br>
+      <br>
+      <label for="email id">email id:</label><br>
+      <input type="text" id="email" name="email" placeholder="email id" required=""><br>
+      <br>
+      <label for="mobile number">mobile number:</label><br>
+      <input type="text" id="mobile" name="mobile" placeholder="mobile number" required=""><br>
+      <br>
+      <label for="permanent address">permanent address:</label><br>
+      <input type="text" id="permanent" name="permanent address" placeholder="permanent address" required=""><br>
       <div>
-        <label for="Gender :">Gender :</label>
-        <input type="radio" id="male" name="gender" value="male" />
-        <label for="male">male</label>
-        <input type="radio" id="female" name="gender" value="female" />
-        <label for="female">Female</label>
-        <input type="radio" id="other" name="gender" value="other" />
-        <label for="other">Other</label>
-        <br>
+        <label for="Gender">Gender</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br>
     <br>
-    <label for="I declare that i'm responsible for my actions">I declare that i'm responsible for my actions.</label><br>
-     <input type="checkbox" id="checkbox"/>
+    <label for="I declare that i&#39;m responsible for my actions">I declare that i'm responsible for my actions.</label><br>
+     <input type="checkbox" id="checkbox">
      <br>
-     <br>
-    <input type="submit" value="Submit" />
+    <input type="submit" value="Submit">
       </div>
     </form>
-    <p>[If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php"]</p>
-  </body>
-</html>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
 
 <!-- The <form> Element
 The HTML <form> element is used to create an HTML form for user input:
@@ -119,34 +109,4 @@ Radio buttons let a user select ONE of a limited number of choices.
 
 Example
 A form with radio buttons: -->
-
-<!-- The Target Attribute
-The target attribute specifies where to display the response that is received after submitting the form.
-
-The target attribute can have one of the following values: -->
-
-<!-- The Method Attribute
-The method attribute specifies the HTTP method to be used when submitting the form data.
-
-The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").
-
-The default HTTP method when submitting form data is GET. 
-
-Example
-This example uses the GET method when submitting the form data: -->
-
-<form action="/action_page.php" method="get">
-
-<!-- List of All <form> Attributes
-Attribute	Description
-accept-charset	Specifies the character encodings used for form submission
-action	Specifies where to send the form-data when a form is submitted
-autocomplete	Specifies whether a form should have autocomplete on or off
-enctype	Specifies how the form-data should be encoded when submitting it to the server (only for method="post")
-method	Specifies the HTTP method to use when sending form-data
-name	Specifies the name of the form
-novalidate	Specifies that the form should not be validated when submitted
-rel	Specifies the relationship between a linked resource and the current document
-target	Specifies where to display the response that is received after submitting the form -->
-
-
+</body></html>
