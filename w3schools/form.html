@@ -1,0 +1,152 @@
+<!-- 
+
+HTML Forms
+An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+
+Example -->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <h3>APPLECATION FORM</h3>
+
+    <form action="/action_page.php" autocomplete="on">
+      <label for="fname">First name:</label>
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        placeholder="first name"
+        required
+      /><br>
+      <br />
+      <label for="lname">Last name:</label>
+      <input
+        type="text"
+        id="lname"
+        name="lname"
+        placeholder="last name"
+        required
+      /><br />
+      <br />
+      <label for="father name">father name:</label>
+      <input
+        type="text"
+        id="father"
+        name="father"
+        placeholder="fater name"
+        required
+      /><br />
+      <br />
+      <label for="mother name">mother name:</label>
+      <input
+        type="text"
+        id="mother"
+        name="mother"
+        placeholder="mother name"
+        required
+      /><br />
+      <br />
+      <label for="email id">email id:</label>
+      <input
+        type="text"
+        id="email"
+        name="email"
+        placeholder="email id"
+        required
+      /><br />
+      <br />
+      <label for="mobile number">mobile number:</label>
+      <input
+        type="text"
+        id="mobile"
+        name="mobile"
+        placeholder="mobile number"
+        required
+      /><br />
+      <br />
+      <label for="permanent address">permanent address:</label>
+      <input type="text" id="permanent" name="permanent address" placeholder="permanent address" required/><br>
+      <br>
+      <div>
+        <label for="Gender :">Gender :</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+        <br>
+    <br>
+    <label for="I declare that i'm responsible for my actions">I declare that i'm responsible for my actions.</label><br>
+     <input type="checkbox" id="checkbox"/>
+     <br>
+     <br>
+    <input type="submit" value="Submit" />
+      </div>
+    </form>
+    <p>[If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php"]</p>
+  </body>
+</html>
+
+<!-- The <form> Element
+The HTML <form> element is used to create an HTML form for user input:
+<form>
+.
+form elements
+.
+</form>
+The <form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+
+All the different form elements are covered in this chapter: HTML Form Elements. -->
+
+<!-- The <input> Element
+The HTML <input> element is the most used form element.
+An <input> element can be displayed in many ways, depending on the type attribute.
+Here are some examples: -->
+
+<!-- Type	Description -->
+<!-- <input type="text">	Displays a single-line text input field
+<input type="radio">	Displays a radio button (for selecting one of many choices)
+<input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit">	Displays a submit button (for submitting the form)
+<input type="button">	Displays a clickable button -->
+
+<!-- Radio Buttons
+The <input type="radio"> defines a radio button.
+
+Radio buttons let a user select ONE of a limited number of choices.
+
+Example
+A form with radio buttons: -->
+
+<!-- The Target Attribute
+The target attribute specifies where to display the response that is received after submitting the form.
+
+The target attribute can have one of the following values: -->
+
+<!-- The Method Attribute
+The method attribute specifies the HTTP method to be used when submitting the form data.
+
+The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").
+
+The default HTTP method when submitting form data is GET. 
+
+Example
+This example uses the GET method when submitting the form data: -->
+
+<form action="/action_page.php" method="get">
+
+<!-- List of All <form> Attributes
+Attribute	Description
+accept-charset	Specifies the character encodings used for form submission
+action	Specifies where to send the form-data when a form is submitted
+autocomplete	Specifies whether a form should have autocomplete on or off
+enctype	Specifies how the form-data should be encoded when submitting it to the server (only for method="post")
+method	Specifies the HTTP method to use when sending form-data
+name	Specifies the name of the form
+novalidate	Specifies that the form should not be validated when submitted
+rel	Specifies the relationship between a linked resource and the current document
+target	Specifies where to display the response that is received after submitting the form -->
+
+
