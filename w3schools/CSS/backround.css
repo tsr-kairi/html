@@ -1,0 +1,216 @@
+
+/* CSS Backgrounds
+The CSS background properties are used to add background effects for elements.
+In these chapters, you will learn about the following CSS background properties:
+
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+background (shorthand property) */
+
+/* CSS background-color
+The background-color property specifies the background color of an element.
+
+Example
+The background color of a page is set like this: */
+
+body {
+  background-color: lightblue;
+}
+
+/* With CSS, a color is most often specified by:
+
+a valid color name - like "red"
+a HEX value - like "#ff0000"
+an RGB value - like "rgb(255,0,0)"
+Look at CSS Color Values for a complete list of possible color values.
+
+Other Elements
+You can set the background color for any HTML elements:
+
+Example
+Here, the <h1>, <p>, and <div> elements will have different background colors:  */
+
+h1 {
+  background-color: green;
+}
+
+div {
+  background-color: lightblue;
+}
+
+p {
+  background-color: yellow;
+}
+
+/* Opacity / Transparency
+The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent: */
+
+/* opacity 1
+
+opacity 0.6
+
+opacity 0.3
+
+opacity 0.1
+
+Example */
+div {
+  background-color: green;
+  opacity: 0.3;
+}
+
+/* Transparency using RGBA
+If you do not want to apply opacity to child elements, like in our example above, use RGBA color values. The following example sets the opacity for the background color and not the text:
+
+100% opacity
+
+60% opacity
+
+30% opacity
+
+10% opacity
+
+You learned from our CSS Colors Chapter, that you can use RGB as a color value. In addition to RGB, you can use an RGB color value with an alpha channel (RGBA) - which specifies the opacity for a color.
+
+An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque). */
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background: rgb(0, 128, 0);
+}
+
+div.first {
+  background: rgba(0, 128, 0, 0.1);
+}
+
+div.second {
+  background: rgba(0, 128, 0, 0.3);
+}
+
+div.third {
+  background: rgba(0, 128, 0, 0.6);
+}
+</style>
+</head>
+<body>
+
+<h1>Transparent Box</h1>
+<p>With opacity:</p>
+
+<div style="opacity:0.1;">
+  <h1>10% opacity</h1>
+</div>
+
+<div style="opacity:0.3;">
+  <h1>30% opacity</h1>
+</div>
+
+<div style="opacity:0.6;">
+  <h1>60% opacity</h1>
+</div>
+
+<div>
+  <h1>opacity 1</h1>
+</div>
+
+<p>With RGBA color values:</p>
+<div class="first">
+  <h1>10% opacity</h1>
+</div>
+
+<div class="second">
+  <h1>30% opacity</h1>
+</div>
+
+<div class="third">
+  <h1>60% opacity</h1>
+</div>
+
+<div>
+  <h1>default</h1>
+</div>
+
+<p>Notice how the text gets transparent as well as the background color when using the opacity property.</p>
+
+</body>
+</html>
+
+/* CSS Background Image
+CSS background-image
+The background-image property specifies an image to use as the background of an element.
+
+By default, the image is repeated so it covers the entire element.
+
+Example
+Set the background image for a page:  */
+
+body {
+  background-image: url("paper.gif");
+}
+
+/* CSS background-repeat
+By default, the background-image property repeats an image both horizontally and vertically.
+
+Some images should be repeated only horizontally or vertically, or they will look strange, like this:
+
+Example */
+body {
+  background-image: url("gradient_bg.png");
+}
+
+/* CSS background-repeat: no-repeat
+Showing the background image only once is also specified by the background-repeat property:
+
+Example
+Show the background image only once: */
+
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+}
+
+/* CSS background-position
+The background-position property is used to specify the position of the background image.
+
+Example
+Position the background image in the top-right corner:  */
+
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+/* CSS background-attachment
+The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page):
+
+Example
+Specify that the background image should be fixed: */
+
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+
+/* CSS background - Shorthand property
+To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.
+
+Instead of writing: */
+
+body {
+  background-color: #ffffff;
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
