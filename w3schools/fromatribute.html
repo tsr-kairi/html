@@ -84,3 +84,117 @@ The <button> element defines a clickable button:
 
 Example -->
 <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+
+<!-- The <fieldset> and <legend> Elements
+The <fieldset> element is used to group related data in a form.
+
+The <legend> element defines a caption for the <fieldset> element.
+
+Example -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Grouping Form Data with Fieldset</h2>
+
+<p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+</body>
+</html>
+
+
+<!-- The <datalist> Element
+The <datalist> element specifies a list of pre-defined options for an <input> element.
+
+Users will see a drop-down list of the pre-defined options as they input data.
+
+The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.
+
+Example -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The datalist Element</h2>
+
+<p>The datalist element specifies a list of pre-defined options for an input element.</p>
+
+<form action="/action_page.php">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+
+<p><b>Note:</b> The datalist tag is not supported in Safari prior version 12.1.</p>
+
+</body>
+</html>
+
+<!-- The <output> Element
+The <output> element represents the result of a calculation (like one performed by a script).
+
+Example
+Perform a calculation and show the result in an <output> element: -->
+
+    <!DOCTYPE html>
+<html>
+<body>
+
+<h2>The output Element</h2>
+<p>The output element represents the result of a calculation.</p>
+
+<form action="/action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+<p><strong>Note:</strong> The output element is not supported in Edge prior version 13.</p>
+
+</body>
+</html>
+
+
+<!-- HTML Form Elements
+Tag	Description
+<form>	Defines an HTML form for user input
+<input>	Defines an input control
+<textarea>	Defines a multiline input control (text area)
+<label>	Defines a label for an <input> element
+<fieldset>	Groups related elements in a form
+<legend>	Defines a caption for a <fieldset> element
+<select>	Defines a drop-down list
+<optgroup>	Defines a group of related options in a drop-down list
+<option>	Defines an option in a drop-down list
+<button>	Defines a clickable button
+<datalist>	Specifies a list of pre-defined options for input controls
+<output>	Defines the result of a calculation -->
+
+    
