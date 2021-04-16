@@ -1,0 +1,202 @@
+
+/* CSS Text
+CSS has a lot of properties for formatting text.
+
+TEXT FORMATTING
+This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored "Try it Yourself" link. */
+
+
+/* Text Color
+The color property is used to set the color of the text. The color is specified by:
+
+a color name - like "red"
+a HEX value - like "#ff0000"
+an RGB value - like "rgb(255,0,0)"
+Look at CSS Color Values for a complete list of possible color values.
+
+The default text color for a page is defined in the body selector.
+
+Example */
+body {
+  color: blue;
+}
+
+h1 {
+  color: green;
+}
+
+/* Text Color and Background Color
+In this example, we define both the background-color property and the color property:
+
+Example */
+body {
+  background-color: lightgrey;
+  color: blue;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+}
+/* 
+CSS Text Alignment
+Text Alignment
+The text-align property is used to set the horizontal alignment of a text.
+
+A text can be left or right aligned, centered, or justified.
+
+The following example shows center aligned, and left and right aligned text (left alignment is default if text direction is left-to-right, and right alignment is default if text direction is right-to-left):
+
+Example */
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+h3 {
+  text-align: right;
+}
+
+/* Text Direction
+The direction and unicode-bidi properties can be used to change the text direction of an element:
+
+Example */
+p {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+/* Vertical Alignment
+The vertical-align property sets the vertical alignment of an element.
+
+This example demonstrates how to set the vertical alignment of an image in a text:
+
+Example */
+img.top {
+  vertical-align: top;
+}
+
+img.middle {
+  vertical-align: middle;
+}
+
+img.bottom {
+  vertical-align: bottom;
+}
+
+/* Text Decoration
+The text-decoration property is used to set or remove decorations from text.
+
+The value text-decoration: none; is often used to remove underlines from links:
+
+Example */
+a {
+  text-decoration: none;
+}
+
+/* Text Transformation
+The text-transform property is used to specify uppercase and lowercase letters in a text.
+
+It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word:
+
+Example */
+p.uppercase {
+  text-transform: uppercase;
+}
+
+p.lowercase {
+  text-transform: lowercase;
+}
+
+p.capitalize {
+  text-transform: capitalize;
+}
+
+/* CSS Text Spacing
+Text Indentation
+The text-indent property is used to specify the indentation of the first line of a text:
+
+Example */
+p {
+  text-indent: 50px;
+}
+
+/* Letter Spacing
+The letter-spacing property is used to specify the space between the characters in a text.
+
+The following example demonstrates how to increase or decrease the space between characters:
+
+Example */
+h1 {
+  letter-spacing: 3px;
+}
+
+h2 {
+  letter-spacing: -3px;
+}
+
+/* Line Height
+The line-height property is used to specify the space between lines:
+
+Example */
+p.small {
+  line-height: 0.8;
+}
+
+p.big {
+  line-height: 1.8;
+}
+
+/* Word Spacing
+The word-spacing property is used to specify the space between the words in a text.
+
+The following example demonstrates how to increase or decrease the space between words:
+
+Example */
+h1 {
+  word-spacing: 10px;
+}
+
+h2 {
+  word-spacing: -5px;
+}
+/* White Space
+The white-space property specifies how white-space inside an element is handled.
+
+This example demonstrates how to disable text wrapping inside an element:
+
+Example */
+p {
+  white-space: nowrap;
+}
+
+/* Text Shadow
+The text-shadow property adds shadow to text.
+
+In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px):
+
+Text shadow effect!
+Example */
+h1 {
+  text-shadow: 2px 2px;
+}
+
+/* All CSS Text Properties
+Property	Description
+color	Sets the color of text
+direction	Specifies the text direction/writing direction
+letter-spacing	Increases or decreases the space between characters in a text
+line-height	Sets the line height
+text-align	Specifies the horizontal alignment of text
+text-decoration	Specifies the decoration added to text
+text-indent	Specifies the indentation of the first line in a text-block
+text-shadow	Specifies the shadow effect added to text
+text-transform	Controls the capitalization of text
+text-overflow	Specifies how overflowed content that is not displayed should be signaled to the user
+unicode-bidi	Used together with the direction property to set or return whether the text should be overridden to support multiple languages in the same document
+vertical-align	Sets the vertical alignment of an element
+white-space	Specifies how white-space inside an element is handled
+word-spacing	Increases or decreases the space between words in a text */
+
