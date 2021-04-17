@@ -47,4 +47,27 @@ Example */
 div {
   opacity: 0.3;
 
-  
+
+
+  /* Transparency using RGBA
+If you do not want to apply opacity to child elements, like in our example above, use RGBA color values. The following example sets the opacity for the background color and not the text:
+
+100% opacity
+
+60% opacity
+
+30% opacity
+
+10% opacity
+
+You learned from our CSS Colors Chapter, that you can use RGB as a color value. In addition to RGB, you can use an RGB color value with an alpha channel (RGBA) - which specifies the opacity for a color.
+
+An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+
+Tip: You will learn more about RGBA Colors in our CSS Colors Chapter.
+
+Example */
+div {
+  background: rgba(76, 175, 80, 0.3) /* Green background with 30% opacity */
+}
+
