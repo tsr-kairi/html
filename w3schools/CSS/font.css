@@ -60,3 +60,192 @@ Specify some different fonts for three paragraphs: */
   font-family: "Lucida Console", "Courier New", monospace;
 }
 
+/* CSS Font Style
+Font Style
+The font-style property is mostly used to specify italic text.
+
+This property has three values:
+
+normal - The text is shown normally
+italic - The text is shown in italics
+oblique - The text is "leaning" (oblique is very similar to italic, but less supported)
+Example
+p.normal { */
+  font-style: normal;
+}
+
+p.italic {
+  font-style: italic;
+}
+
+p.oblique {
+  font-style: oblique;
+}
+/* Font Weight
+The font-weight property specifies the weight of a font:
+
+Example */
+p.normal {
+  font-weight: normal;
+}
+
+p.thick {
+  font-weight: bold;
+}
+/* Font Variant
+The font-variant property specifies whether or not a text should be displayed in a small-caps font.
+
+In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted uppercase letters appears in a smaller font size than the original uppercase letters in the text.
+
+Example */
+p.normal {
+  font-variant: normal;
+}
+
+p.small {
+  font-variant: small-caps;
+}
+/* 
+Font Size
+The font-size property sets the size of the text.
+
+Being able to manage the text size is important in web design. However, you should not use font size adjustments to make paragraphs look like headings, or headings look like paragraphs.
+CSS Font Size
+
+Always use the proper HTML tags, like <h1> - <h6> for headings and <p> for paragraphs.
+
+The font-size value can be an absolute, or relative size.
+
+Absolute size:
+
+Sets the text to a specified size
+Does not allow a user to change the text size in all browsers (bad for accessibility reasons)
+Absolute size is useful when the physical size of the output is known
+Relative size:
+
+Sets the size relative to surrounding elements
+Allows a user to change the text size in browsers
+Note: If you do not specify a font size, the default size for normal text, like paragraphs, is 16px (16px=1em).
+
+Set Font Size With Pixels
+Setting the text size with pixels gives you full control over the text size:
+
+Example */
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 14px;
+}
+/* Tip: If you use pixels, you can still use the zoom tool to resize the entire page.
+
+Set Font Size With Em
+To allow users to resize the text (in the browser menu), many developers use em instead of pixels.
+
+1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.
+
+The size can be calculated from pixels to em using this formula: pixels/16=em
+
+Example */
+
+h1 {
+  font-size: 2.5em; /* 40px/16=2.5em */
+}
+
+h2 {
+  font-size: 1.875em; /* 30px/16=1.875em */
+}
+
+p {
+  font-size: 0.875em; /* 14px/16=0.875em */
+}
+
+/* Google Fonts
+If you do not want to use any of the standard fonts in HTML, you can use Google Fonts.
+
+Google Fonts are free to use, and have more than 1000 fonts to choose from.
+
+How To Use Google Fonts
+Just add a special style sheet link in the <head> section and then refer to the font in the CSS.
+
+Example
+Here, we want to use a font named "Sofia" from Google Fonts: */
+
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+body {
+  font-family: "Sofia", sans-serif;
+}
+</style>
+</head>
+Result:
+
+/* Sofia Font */
+
+/* Font Pairing Rules
+Here are some basic rules to create great font pairings:
+
+1. Compliment
+It is always safe to find font pairings that complement one another.
+
+A great font combination should harmonize, without being too similar or too different.
+
+2. Use Font Superfamilies
+A font superfamily is a set of fonts designed to work well together. So, using different fonts within the same superfamily is safe.
+
+For example, the Lucida superfamily contains the following fonts: Lucida Sans, Lucida Serif, Lucida Typewriter Sans, Lucida Typewriter Serif and Lucida Math.
+
+3. Contrast is King
+Two fonts that are too similar will often conflict. However, contrasts, done the right way, brings out the best in each font.
+
+Example: Combining serif with sans serif is a well known combination.
+
+A strong superfamily includes both serif and sans serif variations of the same font (e.g. Lucida and Lucida Sans).
+
+4. Choose Only One Boss
+One font should be the boss. This establishes a hierarchy for the fonts on your page. This can be achieved by varying the size, weight and color.
+
+Example
+No doubt "Georgia" is the boss here: */
+
+body {
+  background-color: black;
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  color: gray;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 60px;
+  color: white;
+}
+
+/* The CSS Font Property
+To shorten the code, it is also possible to specify all the individual font properties in one property.
+
+The font property is a shorthand property for:
+
+font-style
+font-variant
+font-weight
+font-size/line-height
+font-family
+Note: The font-size and font-family values are required. If one of the other values is missing, their default value are used.
+
+Example
+Use font to set several font properties in one declaration: */
+
+p.a {
+  font: 20px Arial, sans-serif;
+}
+
+p.b {
+  font: italic small-caps bold 12px/30px Georgia, serif;
+}
