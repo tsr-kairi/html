@@ -1,0 +1,50 @@
+
+/* CSS Opacity / Transparency
+The opacity property specifies the opacity/transparency of an element.
+
+Transparent Image
+The opacity property can take a value from 0.0 - 1.0. The lower value, the more transparent:
+
+Forest
+opacity 0.2
+
+Forest
+opacity 0.5
+
+Forest
+opacity 1
+(default)
+
+Example */
+img {
+  opacity: 0.5;
+}
+
+/* Example explained
+The first CSS block is similar to the code in Example 1. In addition, we have added what should happen when a user hovers over one of the images. In this case we want the image to NOT be transparent when the user hovers over it. The CSS for this is opacity:1;.
+
+When the mouse pointer moves away from the image, the image will be transparent again.
+
+An example of reversed hover effect:
+
+Northern LightsMountainsItaly
+Example */
+img:hover {
+  opacity: 0.5;
+}
+/* Transparent Box
+When using the opacity property to add transparency to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read:
+
+opacity 1
+
+opacity 0.6
+
+opacity 0.3
+
+opacity 0.1
+
+Example */
+div {
+  opacity: 0.3;
+
+  
