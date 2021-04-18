@@ -1,0 +1,92 @@
+/* 
+
+Navigation Bars
+Having easy-to-use navigation is important for any web site.
+
+With CSS you can transform boring HTML menus into good-looking navigation bars.
+
+Navigation Bar = List of Links
+A navigation bar needs standard HTML as a base.
+
+In our examples we will build the navigation bar from a standard HTML list.
+
+A navigation bar is basically a list of links, so using the <ul> and <li> elements makes perfect sense:
+
+Example */
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<p>Note: We use href="#" for test links. In a real web site this would be URLs.</p>
+
+</body>
+</html>
+
+li a {
+  display: block;
+  width: 60px;
+}
+
+/* Example explained:
+
+display: block; - Displaying the links as block elements makes the whole link area clickable (not just the text), and it allows us to specify the width (and padding, margin, height, etc. if you want)
+width: 60px; - Block elements take up the full width available by default. We want to specify a 60 pixels width
+You can also set the width of <ul>, and remove the width of <a>, as they will take up the full width available when displayed as block elements. This will produce the same result as our previous example:
+ */
+
+
+ /* Vertical Navigation Bar Examples
+Create a basic vertical navigation bar with a gray background color and change the background color of the links when the user moves the mouse over them:
+
+Home
+News
+Contact
+About
+Example */
+
+
+/* Horizontal Navigation Bar
+HomeNewsContactAbout
+There are two ways to create a horizontal navigation bar. Using inline or floating list items.
+
+Inline List Items
+One way to build a horizontal navigation bar is to specify the <li> elements as inline, in addition to the "standard" code from the previous page:
+
+Example */
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+</body>
+</html>
+
+
