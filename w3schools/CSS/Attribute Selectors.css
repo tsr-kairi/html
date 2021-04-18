@@ -1,0 +1,70 @@
+
+
+/* The [attribute="value"] selector is used to select elements with a specified attribute and value.
+
+The following example selects all <a> elements with a target="_blank" attribute:
+
+ExampleCSS [attribute="value"] Selector
+ */
+
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+a[target=_blank] {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>CSS [attribute="value"] Selector</h2>
+<p>The link with target="_blank" gets a yellow background:</p>
+
+<a href="https://www.google.com">w3schools.com</a>
+<a href="http://www.disney.com" target="_blank">disney.com</a>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+</body>
+</html>
+
+/* CSS [attribute~="value"] Selector
+The [attribute~="value"] selector is used to select elements with an attribute value containing a specified word.
+
+The following example selects all elements with a title attribute that contains a space-separated list of words, one of which is "flower":
+
+Example */
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+[title~=flower] {
+  border: 5px solid yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>CSS [attribute~="value"] Selector</h2>
+<p>All images with the title attribute containing the word "flower" get a yellow border.</p>
+
+<img src="klematis.jpg" title="klematis flower" width="150" height="113">
+<img src="img_flwr.gif" title="flower" width="224" height="162">
+<img src="img_tree.gif" title="tree" width="200" height="358">
+
+</body>
+</html>
+
+
+/* All CSS Attribute Selectors
+Selector	Example	Example description
+[attribute]	[target]	Selects all elements with a target attribute
+[attribute=value]	[target=_blank]	Selects all elements with target="_blank"
+[attribute~=value]	[title~=flower]	Selects all elements with a title attribute containing the word "flower"
+[attribute|=value]	[lang|=en]	Selects all elements with a lang attribute value starting with "en"
+[attribute^=value]	a[href^="https"]	Selects every <a> element whose href attribute value begins with "https"
+[attribute$=value]	a[href$=".pdf"]	Selects every <a> element whose href attribute value ends with ".pdf"
+[attribute*=value]	a[href*="w3schools"]	Selects every <a> element whose href attribute value contains the substring "w3schools" */
+
+
